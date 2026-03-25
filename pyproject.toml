@@ -1,0 +1,20 @@
+[project]
+name = "vasyan-desktop-notifier"
+version = "0.1.0"
+description = "TODO"
+readme = "README.md"
+authors = [
+    { name = "Roman Karzhavin", email = "karzhavin.rd@ya.ru" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "desktop-notifier>=6.2.0",
+    "vasyan-core>=0.1.0",
+]
+
+[project.scripts]
+vasyan-desktop-notifier = "vasyan_desktop_notifier:main"
+
+[build-system]
+requires = ["uv_build>=0.8.22,<0.9.0"]
+build-backend = "uv_build"

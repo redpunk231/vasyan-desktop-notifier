@@ -1,5 +1,5 @@
 [project]
-name = "vasyan-desktop-notifier"
+name = "vasyan_desktop_notifier"
 version = "0.1.0"
 description = "TODO"
 readme = "README.md"

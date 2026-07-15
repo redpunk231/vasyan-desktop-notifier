@@ -8,14 +8,14 @@ SYSTEMD_SERVICE_NAME = 'vasyan-notifier.service'
 SYSTEMD_SERVICE_TEMPLATE = '''
 [Unit]
 Description=Vasyan desktop notifier service
-After=xdg-desktop-autostart.target
+After=graphical-session.target
 
 [Service]
 Type=simple
 ExecStart={path_app} run -c {path_config} -n {service_name}
 
 [Install]
-WantedBy=xdg-desktop-autostart.target
+WantedBy=graphical-session.target
 '''
 
 
